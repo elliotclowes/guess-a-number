@@ -8,8 +8,17 @@ let attemptsLeft = 3
 
 
 document.getElementById('guessButton').addEventListener('click', function() {
-    // Get the number that the user enters.
-    let userGuess = document.getElementById('userGuess').value
+    // Get the number that the user enters. Convert it from a string to an integer. Round it. 
+    let userGuess = Math.round(Number(document.getElementById('userGuess').value))
+
+    // Make sure user enters number between 1-10
+    if (userGuess < 1 || userGuess > 10) {
+        // Show error message.
+        document.getElementById('error').textContent = 'Please enter a number between 1-10.'
+        return
+    }
+        // Make sure error is hidden if they've entered 1-10
+        else { document.getElementById('error').textContent = '' }
 
     // If user guesses correctly.
     if (userGuess == randomNumber) {
@@ -94,7 +103,7 @@ document.getElementById('newGameButton').addEventListener('click', function() {
     attempts = 0
 
     // Set 'attemptsLeft' to 3 again.
-    attemptsLeft = 0
+    attemptsLeft = 3
 
     // Make <p id="result"></p> empty again.
     document.getElementById('result').textContent = ''
