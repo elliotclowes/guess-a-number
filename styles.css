@@ -25,3 +25,7 @@ button {
 #score, #computerscore {
     font-size: 18px;
 }
+
+#error {
+    color: red;
+}
