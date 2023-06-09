@@ -11,4 +11,4 @@ See it in action at [https://elliotclowes.github.io/guess-a-number/](https://ell
  - Let's user play multiple times.
  - Keeps track of score for both computer and user.
 
-![](https://elliotclowes.github.io/guess-a-number/screenshot.png)
+![Screenshot](https://elliotclowes.github.io/guess-a-number/screenshot.png)
