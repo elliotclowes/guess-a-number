@@ -62,11 +62,15 @@ document.getElementById('guessButton').addEventListener('click', function() {
                     // Make note of new guess difference.
                     let newGuessDifference = Math.abs(randomNumber - userGuess)
 
-                    // Create string based on if they're warmer or colder.
-                    let warmerOrColder = newGuessDifference < guessDifference ? "warmer" : "colder"
+                    // Check if new guess difference is different from previous one
+                    if (newGuessDifference != guessDifference) {
 
-                    // Tell user if they're getting warmer or colder.
-                    document.getElementById('result').textContent = "You're getting " + warmerOrColder + ". Try again!"
+                        // Create string based on if they're warmer or colder.
+                        let warmerOrColder = newGuessDifference < guessDifference ? "warmer" : "colder"
+
+                        // Tell user if they're getting warmer or colder.
+                        document.getElementById('result').textContent = "You're getting " + warmerOrColder + ". Try again!"
+            }
 
                     // Tell user how many attempts they have left.
                     document.getElementById('attempts').innerHTML = `You have <b>${attemptsLeft} attempts</b> left.`
@@ -83,7 +87,7 @@ document.getElementById('guessButton').addEventListener('click', function() {
                     document.getElementById('attempts').innerHTML = `You have <b>${attemptsLeft} attempts</b> left.`
 
                     // Tell user they've run out of attemps and that the random number was.
-                    document.getElementById('result').textContent = "Game over! The number was " + randomNumber
+                    document.getElementById('result').textContent = "Game over! The number was " + randomNumber +"."
 
                     // Show "Start New Game" button.
                     document.getElementById('newGameButton').style.display = 'block'
