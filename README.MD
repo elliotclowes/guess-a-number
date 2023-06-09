@@ -10,3 +10,5 @@ See it in action at [https://elliotclowes.github.io/guess-a-number/](https://ell
  - Will tell the user if they're getting warmer or colder on their second guess.
  - Let's user play multiple times.
  - Keeps track of score for both computer and user.
+
+![](https://elliotclowes.github.io/guess-a-number/screenshot.png)
