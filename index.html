@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Number Guessing Game</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>The Number Guessing Game</h1>
+    <p>Guess a number between 1 and 20.</p>
+    <!-- TODO: THIS DOESN'T ACTUALLY STOP USER ENTER NUMBERS LARGER THAN 20. -->
+    <input id="userGuess" type="number" min="1" max="20" />
+    <button id="guessButton">Guess</button>
+    <p id="result"></p>
+    <p id="score">Your score: 0</p>
+
+    <!-- Start new game button. Default to hidden. -->
+    <button id="newGameButton" style="display:none">Start New Game</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
