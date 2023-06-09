@@ -5,22 +5,26 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <h1>The Number Guessing Game</h1>
-    <p>Let's see if you can beat the computer.</p>
-    <p>The computer is thinking of a number between 1 and 10.</p>
-    <p>Can you guess what it is?</p>
-    <p id="attempts">You have <b>3 attempts</b> left.</p
-    <!-- TODO: THIS DOESN'T ACTUALLY STOP USER ENTER NUMBERS LARGER THAN 20. -->
-    <input id="userGuess" type="number" min="1" max="20" />
-    <button id="guessButton">Guess</button>
-    <p id="error"></p>
-    <p id="result"></p>
-    <p id="score">Your score: 0</p>
-    <p id="computerscore">Computers score: 0</p>
-
-    <!-- Start new game button. Default to hidden. -->
-    <button id="newGameButton" style="display:none">Start New Game</button>
-
+    <div class="container">
+        <h1>The Number Guessing Game</h1>
+        <div class="content">
+            <p class="lead">The computer is thinking of a number between 1 and 10.<br><br> Can you guess what it is?</p>
+            <hr>
+            <div class="score-board">
+                <p id="score">Your score: 0</p>
+                <p id="computerscore">Computers score: 0</p>
+            </div>
+            <hr>
+            <p id="attempts">You have <b>3 attempts</b> left.</p>
+            <div class="input-group">
+                <input id="userGuess" type="number" min="1" max="10" />
+                <button id="guessButton">Guess</button>
+            </div>
+            <p id="error"></p>
+            <p id="result"></p>
+            <center><button id="newGameButton" style="display:none">Start New Game</button></center>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
