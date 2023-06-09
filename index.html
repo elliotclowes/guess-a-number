@@ -6,12 +6,16 @@
 </head>
 <body>
     <h1>The Number Guessing Game</h1>
-    <p>Guess a number between 1 and 20.</p>
+    <p>Let's see if you can beat the computer.</p>
+    <p>The computer is thinking of a number between 1 and 10.</p>
+    <p>Can you guess what it is?</p>
+    <p id="attempts">You have <b>3 attempts</b> left.</p
     <!-- TODO: THIS DOESN'T ACTUALLY STOP USER ENTER NUMBERS LARGER THAN 20. -->
     <input id="userGuess" type="number" min="1" max="20" />
     <button id="guessButton">Guess</button>
     <p id="result"></p>
     <p id="score">Your score: 0</p>
+    <p id="computerscore">Computers score: 0</p>
 
     <!-- Start new game button. Default to hidden. -->
     <button id="newGameButton" style="display:none">Start New Game</button>
