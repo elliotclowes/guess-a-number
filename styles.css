@@ -1,0 +1,23 @@
+body {
+    /* Should display nicely on most iPhones */
+    max-width: 370px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 10px;
+}
+
+button {
+    margin: 10px 0;
+    padding: 5px 5px;
+}
+
+#result {
+    height: 40px;
+    font-weight: bold;
+}
+
+#score {
+    font-size: 24px;
+}
